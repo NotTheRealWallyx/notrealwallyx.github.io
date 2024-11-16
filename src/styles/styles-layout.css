@@ -74,7 +74,7 @@ header.active .head-top .top-menu ul li {
 }
 
 header .head-top {
-  padding: 30px 65px 15px 65px;
+  padding: 30px 65px 15px;
 }
 
 header .head-top .menu-btn {
@@ -174,7 +174,7 @@ header .head-top .top-menu ul li.active .btn {
 /* 2. Section */
 .section {
   position: relative;
-  padding: 0 80px 150px 80px;
+  padding: 0 80px 150px;
   z-index: 97;
   opacity: 1;
   visibility: visible;
@@ -186,13 +186,13 @@ header .head-top .top-menu ul li.active .btn {
 
 @media (max-width: 960px) {
   .section {
-    padding: 0 40px 120px 40px;
+    padding: 0 40px 120px;
   }
 }
 
 @media (max-width: 480px) {
   .section {
-    padding: 0 20px 120px 20px;
+    padding: 0 20px 120px;
   }
 }
 
@@ -253,7 +253,7 @@ header .head-top .top-menu ul li.active .btn {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 5px;
 }
 
 @media (max-width: 1060px) {
@@ -388,7 +388,7 @@ header .head-top .top-menu ul li.active .btn {
   display: inline-block;
   vertical-align: top;
   width: 32%;
-  margin: 12px 0 0 0;
+  margin: 12px 0 0;
 }
 
 @media (max-width: 840px) {
@@ -452,7 +452,7 @@ header .head-top .top-menu ul li.active .btn {
 .resume-items .resume-item .date {
   position: relative;
   top: -10px;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   display: inline-block;
   padding: 0 5px;
   height: 20px;
@@ -482,7 +482,7 @@ header .head-top .top-menu ul li.active .btn {
 .resume-items .resume-item .location {
   font-weight: 500;
   color: #934325;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 }
 
 .resume-items .resume-item p {
@@ -496,24 +496,12 @@ header .head-top .top-menu ul li.active .btn {
   list-style: none;
 }
 
-.skills ul li {
-  padding: 5px 0 30px 0;
-}
-
 .skills ul li .name {
   font-size: 13px;
   color: #363636;
   font-weight: 400;
   position: relative;
-  margin: 0 0 9px 0;
-}
-
-.skills ul li .progress {
-  display: block;
-  height: 3px;
-  position: relative;
-  width: 100%;
-  background: #dddddd;
+  margin: 0 0 9px;
 }
 
 .skills ul li .progress .percentage {
@@ -562,7 +550,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.contacts .alert-success p {
-  margin: 60px 0 30px 0;
+  margin: 60px 0 30px;
   font-size: 15px;
 }
 
@@ -667,7 +655,7 @@ a.btn,
 
 .skills ul li {
   position: relative;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
 }
 
 .skills.list ul li {
@@ -680,19 +668,8 @@ a.btn,
   width: 50%;
 }
 
-.skills ul li:last-child {
-  padding-bottom: 0;
-}
-
 .skills ul li:after {
   display: none;
-}
-
-.skills ul li .name {
-  font-size: 13px;
-  font-weight: 400;
-  position: relative;
-  margin: 0 0 9px 0;
 }
 
 .skills.list ul li .name {
@@ -728,27 +705,6 @@ a.btn,
 
 .skills.list ul li .progress {
   display: none;
-}
-
-.skills ul li .progress .percentage {
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 3px;
-  width: 0%;
-  background: #f26b38;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-.skills ul li .progress .percentage .percent {
-  position: absolute;
-  top: -27px;
-  right: 0;
-  font-size: 13px;
-  font-weight: 400;
 }
 
 @media (max-width: 580px) {
