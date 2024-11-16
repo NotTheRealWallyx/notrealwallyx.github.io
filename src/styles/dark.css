@@ -140,9 +140,7 @@ header {
 
 .skills ul li .progress,
 mark,
-ins,
-.skills.dotted ul li .progress .dg span,
-.skills.dotted ul li .progress .da span {
+ins {
   background: #666666;
 }
 

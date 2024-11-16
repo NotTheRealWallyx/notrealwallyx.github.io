@@ -640,10 +640,6 @@ footer .copy {
   New Styles
 */
 
-.skills.dotted ul li .progress .da span {
-  background: #f26b38 !important;
-}
-
 .section.works .filters .btn-group {
   display: inline-block;
   vertical-align: top;
@@ -675,22 +671,9 @@ a.btn,
   margin: 0 -30px;
 }
 
-.skills.dotted ul {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
 .skills ul li {
   position: relative;
   padding: 0 0 30px 0;
-}
-
-.skills.dotted ul li {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
 }
 
 .skills.list ul li {
@@ -749,11 +732,6 @@ a.btn,
   background: #dddddd;
 }
 
-.skills.dotted ul li .progress {
-  height: 14px;
-  background: transparent !important;
-}
-
 .skills.list ul li .progress {
   display: none;
 }
@@ -779,36 +757,7 @@ a.btn,
   font-weight: 400;
 }
 
-.skills.dotted ul li .progress .percentage {
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  height: 14px;
-  background: transparent !important;
-  z-index: 2;
-}
-
-.skills.dotted ul li .progress .dg,
-.skills.dotted ul li .progress .da {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 14px;
-}
-
-.skills.dotted ul li .progress .da {
-  top: 0;
-}
-
 @media (max-width: 580px) {
-  .skills.dotted ul li {
-    width: 100%;
-    display: block;
-  }
-
   .skills.list ul li {
     display: block;
     width: 100%;
