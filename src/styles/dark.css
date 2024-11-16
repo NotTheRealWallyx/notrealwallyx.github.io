@@ -35,11 +35,6 @@ body,
   background: #26262d;
 }
 
-table th,
-table td {
-  border-color: #28282f;
-}
-
 table,
 table th,
 table td {
@@ -49,6 +44,7 @@ table td {
 table th,
 table td {
   border-width: 1px;
+  border-color: #28282f;
 }
 
 body,
@@ -94,8 +90,7 @@ header,
 header.fixed,
 header.opened,
 .footer.fixed,
-footer,
-header {
+footer {
   background: #31313a;
 }
 

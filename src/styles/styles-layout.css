@@ -417,7 +417,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .resume-items .resume-item {
   position: relative;
-  padding: 0 30px 60px 30px;
+  padding: 0 30px 60px;
 }
 
 @media (max-width: 840px) {
@@ -476,7 +476,7 @@ header .head-top .top-menu ul li.active .btn {
 .resume-items .resume-item .name {
   font-weight: 300;
   color: #141414;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 }
 
 .resume-items .resume-item .location {
@@ -490,12 +490,6 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 /* 6. Skills */
-.skills ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .skills ul li .name {
   font-size: 13px;
   color: #363636;
@@ -559,7 +553,7 @@ footer {
   position: fixed;
   bottom: 25px;
   left: 0;
-  padding: 15px 60px 30px 60px;
+  padding: 15px 60px 30px;
   width: 100%;
   background: #ffffff;
   z-index: 100;
