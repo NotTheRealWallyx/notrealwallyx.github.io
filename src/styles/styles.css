@@ -10,6 +10,7 @@ body {
   border: 40px solid #111;
   box-sizing: border-box;
   position: relative;
+  min-height: 700px;
 }
 
 .container {
