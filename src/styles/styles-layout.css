@@ -645,12 +645,6 @@ footer .copy {
   vertical-align: top;
 }
 
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
-  background: none !important;
-  top: -10px;
-}
-
 a.btn,
 .btn {
   transition: background 0.3s ease 0s;
