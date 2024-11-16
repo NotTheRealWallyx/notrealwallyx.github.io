@@ -1,0 +1,816 @@
+/* TABLE OF CONTENTS
+	1. Header
+	2. Section
+	3. Started
+	4. About
+	5. Resume
+	6. Skills
+	7. Contacts
+	8. Footer
+*/
+
+/* 1. Header */
+header {
+  position: fixed;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  z-index: 100;
+  text-align: right;
+  background: #ffffff;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+}
+
+header.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+header.active .menu-btn:before {
+  opacity: 0;
+}
+
+header.active .menu-btn:after {
+  bottom: 9px !important;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+header.active .menu-btn span {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+header.active .head-top .top-menu {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+header.active .head-top .top-menu ul li {
+  display: block;
+  margin: 30px 0;
+}
+
+@media (max-width: 840px) {
+  header {
+    top: 15px;
+  }
+}
+
+header .head-top {
+  padding: 30px 65px 15px 65px;
+}
+
+header .head-top .menu-btn {
+  position: relative;
+  margin: 0 auto;
+  width: 26px;
+  height: 20px;
+}
+
+header .head-top .menu-btn:before,
+header .head-top .menu-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #141414;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+header .head-top .menu-btn:after {
+  top: auto;
+  bottom: 0;
+}
+
+header .head-top .menu-btn span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #141414;
+  margin-top: -1px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+header .head-top .menu-btn:hover:before,
+header .head-top .menu-btn:hover:after,
+header .head-top .menu-btn:hover span {
+  background: #f26b38;
+}
+
+@media (max-width: 840px) {
+  header .head-top .menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 840px) {
+  header .head-top .top-menu {
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    transition: opacity 0.3s ease 0.5s;
+    -moz-transition: opacity 0.3s ease 0.5s;
+    -webkit-transition: opacity 0.3s ease 0.5s;
+    -o-transition: opacity 0.3s ease 0.5s;
+  }
+}
+
+header .head-top .top-menu ul li {
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: top;
+  transition: color 0.3s ease 0s;
+  -moz-transition: color 0.3s ease 0s;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+}
+
+header .head-top .top-menu ul li a {
+  display: block;
+  margin-top: 12px;
+}
+
+header .head-top .top-menu ul li a.btn {
+  margin-top: 0;
+}
+
+header .head-top .top-menu ul li.active a {
+  color: #f26b38;
+}
+
+header .head-top .top-menu ul li.active .btn {
+  color: #ffffff;
+  background: #f26b38;
+  border: 1px solid #f26b38;
+}
+
+/* 2. Section */
+.section {
+  position: relative;
+  padding: 0 80px 150px 80px;
+  z-index: 97;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding: 0 40px 120px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 0 20px 120px 20px;
+  }
+}
+
+.section .content {
+  position: relative;
+}
+
+.section .content .title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 400px) {
+  .section .content .title {
+    text-align: center;
+  }
+}
+
+.section .content .title .title_inner {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  line-height: 18px;
+  font-size: 13px;
+  color: #141414;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  box-shadow: inset 0 -6px 0px #ede574;
+  -moz-box-shadow: inset 0 -6px 0px #ede574;
+  -webkit-box-shadow: inset 0 -6px 0px #ede574;
+  -khtml-box-shadow: inset 0 -6px 0px #ede574;
+}
+
+/* 3. Started */
+.section.started {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.section.started .started-content {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+
+.section.started .started-content .h-title {
+  font-size: 68px;
+  font-family: 'Roboto Mono';
+  color: #141414;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 10px 0 5px 0;
+}
+
+@media (max-width: 1060px) {
+  .section.started .started-content .h-title.blog_title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 840px) {
+  .section.started .started-content .h-title {
+    font-size: 52px;
+    padding: 0 20px;
+  }
+
+  .section.started .started-content .h-title.blog_title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 580px) {
+  .section.started .started-content .h-title span {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .section.started .started-content .h-title {
+    font-size: 42px;
+  }
+
+  .section.started .started-content .h-title.blog_title {
+    font-size: 26px;
+  }
+}
+
+.section.started .started-content .h-subtitle {
+  font-size: 13px;
+}
+
+.section.started .started-content .typed-subtitle,
+.section.started .started-content .typed-bread {
+  font-size: 13px;
+}
+
+.section.started .mouse_btn {
+  font-size: 24px;
+  color: #f26b38;
+  text-align: center;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  left: 50%;
+  bottom: 80px;
+  margin-left: -10px;
+}
+
+.section.started .mouse_btn .ion {
+  position: relative;
+  top: 0px;
+  animation: mouse-anim 1s ease-out 0s infinite;
+}
+
+/* 4. About */
+@media (max-width: 400px) {
+  .section.about {
+    text-align: center;
+  }
+}
+
+.section.about .image {
+  float: left;
+}
+
+.section.about .image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border: 4px solid #ffffff;
+}
+
+@media (max-width: 600px) {
+  .section.about .image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    -moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -khtml-border-radius: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section.about .image {
+    float: none;
+    text-align: center;
+  }
+
+  .section.about .image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -khtml-border-radius: 100px;
+  }
+}
+
+.section.about .desc {
+  margin-left: 130px;
+}
+
+@media (max-width: 600px) {
+  .section.about .desc {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section.about .desc {
+    margin-left: 0;
+  }
+}
+
+.info-list {
+  margin-bottom: 42px;
+}
+
+.info-list ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  margin: 12px 0 0 0;
+}
+
+@media (max-width: 840px) {
+  .info-list ul li {
+    width: 48%;
+  }
+}
+
+@media (max-width: 580px) {
+  .info-list ul li {
+    width: 100%;
+  }
+}
+
+.info-list ul li strong {
+  font-weight: 400;
+  color: #f26b38;
+}
+
+/* 5. Resume */
+@media (max-width: 840px) {
+  .section.resume .cols .col.col-md:first-child {
+    margin-bottom: 120px;
+  }
+}
+
+.resume-items .resume-item {
+  position: relative;
+  padding: 0 30px 60px 30px;
+}
+
+@media (max-width: 840px) {
+  .resume-items .resume-item {
+    padding-right: 0px;
+  }
+}
+
+.resume-items .resume-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #f26b38;
+}
+
+.resume-items .resume-item:first-child {
+  padding-top: 0;
+}
+
+.resume-items .resume-item:last-child {
+  padding-bottom: 0;
+  margin-top: -1px;
+}
+
+.resume-items .resume-item:last-child:before {
+  display: none;
+}
+
+.resume-items .resume-item .date {
+  position: relative;
+  top: -10px;
+  margin: 0 0 5px 0;
+  display: inline-block;
+  padding: 0 5px;
+  height: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #f26b38;
+  border: 1px solid #f26b38;
+}
+
+.resume-items .resume-item .date:before {
+  content: '';
+  width: 29px;
+  height: 1px;
+  position: absolute;
+  left: -30px;
+  top: 9px;
+  background: #f26b38;
+}
+
+.resume-items .resume-item .name {
+  font-weight: 300;
+  color: #141414;
+  margin: 0 0 15px 0;
+}
+
+.resume-items .resume-item .location {
+  font-weight: 500;
+  color: #934325;
+  margin: 0 0 15px 0;
+}
+
+.resume-items .resume-item p {
+  margin: 0;
+}
+
+/* 6. Skills */
+.skills ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills ul li {
+  padding: 5px 0 30px 0;
+}
+
+.skills ul li .name {
+  font-size: 13px;
+  color: #363636;
+  font-weight: 400;
+  position: relative;
+  margin: 0 0 9px 0;
+}
+
+.skills ul li .progress {
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 100%;
+  background: #dddddd;
+}
+
+.skills ul li .progress .percentage {
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: #f26b38;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.skills ul li .progress .percentage .percent {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  font-size: 13px;
+  color: #363636;
+  font-weight: 400;
+}
+
+.skills ul li:last-child {
+  padding-bottom: 0;
+}
+
+/* 10. Contacts */
+@media (max-width: 400px) {
+  .section.contacts {
+    text-align: center;
+  }
+}
+
+.section.contacts .service-items .service-item p {
+  margin-top: 20px;
+}
+
+.section.contacts .contact_form {
+  margin-top: 30px;
+}
+
+.section.contacts .alert-success {
+  display: none;
+}
+
+.section.contacts .alert-success p {
+  margin: 60px 0 30px 0;
+  font-size: 15px;
+}
+
+/* 12. Footer */
+footer {
+  position: fixed;
+  bottom: 25px;
+  left: 0;
+  padding: 15px 60px 30px 60px;
+  width: 100%;
+  background: #ffffff;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+}
+
+@media (max-width: 840px) {
+  footer {
+    bottom: 15px;
+  }
+}
+
+footer .soc {
+  float: right;
+}
+
+footer .soc a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+footer .soc a .ion {
+  font-size: 17px;
+  color: #363636;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+footer .soc a:hover .ion {
+  color: #f26b38;
+}
+
+@media (max-width: 840px) {
+  footer .soc {
+    float: none;
+    text-align: center;
+  }
+
+  footer .soc a {
+    margin: 0 6px;
+  }
+}
+
+footer .copy {
+  float: left;
+  padding-top: 2px;
+  font-size: 11px;
+  color: #999999;
+}
+
+@media (max-width: 840px) {
+  footer .copy {
+    display: none;
+  }
+}
+
+/*
+  New Styles
+*/
+
+.skills.dotted ul li .progress .da span {
+  background: #f26b38 !important;
+}
+
+.section.works .filters .btn-group {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  background: none !important;
+  top: -10px;
+}
+
+a.btn,
+.btn {
+  transition: background 0.3s ease 0s;
+  -moz-transition: background 0.3s ease 0s;
+  -webkit-transition: background 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s;
+}
+
+/* 6. Skills */
+.skills ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.skills.list ul {
+  margin: 0 -30px;
+}
+
+.skills.dotted ul {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.skills ul li {
+  position: relative;
+  padding: 0 0 30px 0;
+}
+
+.skills.dotted ul li {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skills.list ul li {
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.skills ul li:last-child {
+  padding-bottom: 0;
+}
+
+.skills ul li:after {
+  display: none;
+}
+
+.skills ul li .name {
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+  margin: 0 0 9px 0;
+}
+
+.skills.list ul li .name {
+  padding-left: 23px;
+  position: relative;
+}
+
+.skills.list ul li .name:before {
+  content: '\f121';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  display: inline-block;
+  font-family: 'Ionicons';
+  color: #f26b38;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.skills ul li .progress {
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 100%;
+  background: #dddddd;
+}
+
+.skills.dotted ul li .progress {
+  height: 14px;
+  background: transparent !important;
+}
+
+.skills.list ul li .progress {
+  display: none;
+}
+
+.skills ul li .progress .percentage {
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: #f26b38;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.skills ul li .progress .percentage .percent {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.skills.dotted ul li .progress .percentage {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  height: 14px;
+  background: transparent !important;
+  z-index: 2;
+}
+
+.skills.dotted ul li .progress .dg,
+.skills.dotted ul li .progress .da {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 14px;
+}
+
+.skills.dotted ul li .progress .da {
+  top: 0;
+}
+
+@media (max-width: 580px) {
+  .skills.dotted ul li {
+    width: 100%;
+    display: block;
+  }
+
+  .skills.list ul li {
+    display: block;
+    width: 100%;
+  }
+}
