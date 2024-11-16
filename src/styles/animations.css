@@ -8,6 +8,8 @@
   vertical-align: top;
   animation: blink-caret 0.75s step-end infinite;
   min-height: 1.2em;
+  font-family: 'Roboto Mono';
+  font-weight: 100;
 }
 
 @keyframes typing {
