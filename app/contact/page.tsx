@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import './contact.css';
+import Image from 'next/image';
 
 const socials = (theme: 'light' | 'dark') => [
   {
@@ -20,7 +21,7 @@ const socials = (theme: 'light' | 'dark') => [
     href: 'https://github.com/',
     label: 'GitHub',
     icon: (
-      <img
+      <Image
         src={
           theme === 'dark'
             ? '/social_logos/github-mark-white.svg'
@@ -30,6 +31,7 @@ const socials = (theme: 'light' | 'dark') => [
         width={40}
         height={40}
         style={{ display: 'block' }}
+        priority
       />
     ),
   },

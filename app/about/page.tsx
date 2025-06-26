@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import './about.css';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -13,10 +14,13 @@ export default function About() {
       </section>
       <section className="about-main">
         <div className="about-profile">
-          <img
-            src="ProfilePic.png"
+          <Image
+            src="/ProfilePic.png"
             alt="Profile"
             className="about-profile-img"
+            width={200}
+            height={200}
+            priority
           />
         </div>
         <div className="about-info">
