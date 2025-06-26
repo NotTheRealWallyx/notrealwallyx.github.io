@@ -32,7 +32,7 @@ textarea:focus:-ms-input-placeholder {
 
 body,
 .container .line {
-  background: #26262d;
+  background: var(--bg);
 }
 
 table,
@@ -91,7 +91,7 @@ header.fixed,
 header.opened,
 .footer.fixed,
 footer {
-  background: #31313a;
+  background: var(--bg);
 }
 
 .mfp-close-btn-in .mfp-close {

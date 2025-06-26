@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="about-container" style={{ marginTop: '4.5rem' }}>
+    <div className="about-container" style={{ paddingTop: '5.5rem' }}>
       <section className="about-header">
         <h1 className="about-title about-desc-geist">
           about me
@@ -46,39 +46,42 @@ export default function About() {
       </section>
       <section className="about-skills-row">
         <div className="about-skill-card">
-          {/* Replace with your own SVG/icon */}
-          <span className="about-skill-icon">🎨</span>
-          <div>
-            <div className="about-skill-title">Interface &amp; Design</div>
-            <div className="about-skill-desc">
-              Briefing, wireframe, UX, UI and branding.
-            </div>
-          </div>
-        </div>
-        <div className="about-skill-card">
           <span className="about-skill-icon">💻</span>
           <div>
-            <div className="about-skill-title">HTML &amp; CSS</div>
+            <div className="about-skill-title">Programming skills</div>
             <div className="about-skill-desc">
-              Responsive websites with fast loading.
+              Skilled in Python, TypeScript, PHP, Flask, JavaScript, .NET, HTML,
+              CSS, Bash, Java, C, SQL & NoSQL.
             </div>
           </div>
         </div>
         <div className="about-skill-card">
-          <span className="about-skill-icon">⚛️</span>
+          <span className="about-skill-icon">☁️</span>
           <div>
-            <div className="about-skill-title">React.js</div>
+            <div className="about-skill-title">Cloud & Server Management</div>
             <div className="about-skill-desc">
-              Build your system with node.js.
+              Experienced in AWS deployment, maintenance, and optimization of
+              cloud-based applications.
             </div>
           </div>
         </div>
         <div className="about-skill-card">
-          <span className="about-skill-icon">📝</span>
+          <span className="about-skill-icon">🧑‍💼</span>
           <div>
-            <div className="about-skill-title">WordPress</div>
+            <div className="about-skill-title">Team Management</div>
             <div className="about-skill-desc">
-              Create your e-commerce or blog with PHP.
+              Leadership in engineering teams, project management, and agile
+              methodologies.
+            </div>
+          </div>
+        </div>
+        <div className="about-skill-card">
+          <span className="about-skill-icon">🖥️</span>
+          <div>
+            <div className="about-skill-title">Computer Skills</div>
+            <div className="about-skill-desc">
+              Proficient in Microsoft Office, Adobe Suite, Windows, Linux,
+              macOS, and dev environments.
             </div>
           </div>
         </div>

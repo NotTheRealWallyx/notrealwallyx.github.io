@@ -26,7 +26,7 @@ body {
   font-family: 'Roboto Mono';
   font-size: 13px;
   color: #363636;
-  background: #fff;
+  background: var(--bg);
   letter-spacing: 0;
   font-weight: 400;
 }
@@ -59,7 +59,7 @@ body.loaded .section {
   position: relative;
   margin: 30px;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--bg);
 }
 
 @media (max-width: 840px) {
