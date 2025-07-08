@@ -1,0 +1,40 @@
+.about-skill-card {
+  background: var(--bg);
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  min-width: 210px;
+  max-width: 260px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.03);
+  flex: 1 1 210px;
+}
+
+.about-skill-icon {
+  font-size: 2rem;
+  margin-top: 0.1rem;
+}
+
+.about-skill-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--fg);
+}
+
+.about-skill-desc {
+  font-size: 0.97rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+.about-job-location {
+  display: inline-block;
+  font-size: 0.98rem;
+  color: #888;
+  font-weight: 500;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  vertical-align: middle;
+}

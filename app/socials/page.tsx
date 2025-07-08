@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import './socials.css';
 
-import { ContactSocials } from '../components/ContactSocials';
+import { ContactSocials } from '../components/ContactSocials/ContactSocials';
 
 export default function Socials() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
