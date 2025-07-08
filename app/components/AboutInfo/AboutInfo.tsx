@@ -10,7 +10,7 @@ export function AboutInfo() {
     {
       date: '2022 - Present',
       role: 'Head of Engineering',
-      location: 'Hiveound (United Kingdom)',
+      location: 'Hivebound (United Kingdom)',
     },
     {
       date: '2020 - 2022',
