@@ -27,11 +27,8 @@ export default function About() {
         <div className="about-info">
           <h2 className="about-name">Mikel Sanchez</h2>
           <p className="about-desc">
-            I am serious and easy-going, driven by a passion for continuous
-            improvement and a commitment to overcoming challenges. My goal is to
-            contribute my skills and expertise to dynamic and innovative
-            projects, leveraging my diverse experience in software development.
-            My objective is not just to meet expectations but to exceed them.
+            I'm a friendly coder who loves to experiment, learn, and share
+            knowledge. I'm always looking for new challenges and ways to grow.
           </p>
           <div className="about-links">
             <a
@@ -47,24 +44,29 @@ export default function About() {
       </section>
       <section className="about-skills-row">
         <AboutSkillCard
-          icon="💻"
-          title="Programming skills"
-          desc="Skilled in Python, TypeScript, PHP, Flask, JavaScript, .NET, HTML, CSS, Bash, Java, C, SQL & NoSQL."
+          icon="🚀"
+          title="Fast Learner"
+          desc="I pick up new technologies and concepts quickly, always staying up-to-date with the latest trends in software and tech."
         />
         <AboutSkillCard
-          icon="☁️"
-          title="Cloud & Server Management"
-          desc="Experienced in AWS deployment, maintenance, and optimization of cloud-based applications."
+          icon="🧩"
+          title="Problem Solver"
+          desc="I love breaking down complex problems and finding creative, efficient solutions that make a real impact."
         />
         <AboutSkillCard
-          icon="🧑‍💼"
-          title="Team Management"
-          desc="Leadership in engineering teams, project management, and agile methodologies."
+          icon="🛠️"
+          title="Versatile Developer"
+          desc="From backend APIs to frontend design, I enjoy working across the stack and adapting to project needs."
         />
         <AboutSkillCard
-          icon="🖥️"
-          title="Computer Skills"
-          desc="Proficient in Microsoft Office, Adobe Suite, Windows, Linux, macOS, and dev environments."
+          icon="✍️"
+          title="Clear Documenter"
+          desc="I write concise, helpful documentation and comments to make life easier for my future self and teammates."
+        />
+        <AboutSkillCard
+          icon="🧪"
+          title="Experimenter"
+          desc="I love trying out new ideas, tools, and approaches—always exploring ways to make things better or more interesting."
         />
       </section>
       <section className="about-info-cards about-info-cards-row">
