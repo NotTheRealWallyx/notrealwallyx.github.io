@@ -38,3 +38,11 @@
   margin-bottom: 0.2em;
   vertical-align: middle;
 }
+
+.about-skill-card:hover .about-skill-icon,
+.contact-social:hover img,
+.contact-social:hover svg {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+  transition: transform 0.2s, filter 0.2s;
+}
