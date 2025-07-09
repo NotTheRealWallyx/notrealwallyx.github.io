@@ -71,39 +71,39 @@ export default function LayoutShell({
         </Link>
       </nav>
       <div className="logo">
-        {/* <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="220"
-					height="200"
-					viewBox="0 0 220 200"
-					fill="none"
-				>
-					<g clipPath="url(#clip0_309_52)">
-						<path
-							d="M204 0H16C7.16344 0 0 7.16344 0 16V184C0 192.837 7.16344 200 16 200H204C212.837 200 220 192.837 220 184V16C220 7.16344 212.837 0 204 0Z"
-							fill="#0A0A0A"
-						/>
-						<path
-							d="M37.3989 68.7192L73.4851 100L37.3989 131.281"
-							stroke="#00C2FF"
-							strokeWidth="10"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-						<path
-							d="M91.4587 48.5175L110.765 151.482L136.506 93.5646L162.247 151.482L181.553 48.5175"
-							stroke="#00C2FF"
-							strokeWidth="12"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</g>
-					<defs>
-						<clipPath id="clip0_309_52">
-							<rect width="220" height="200" fill="white" />
-						</clipPath>
-					</defs>
-				</svg> */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="220"
+          height="200"
+          viewBox="0 0 220 200"
+          fill="none"
+        >
+          <g clipPath="url(#clip0_309_52)">
+            <path
+              d="M204 0H16C7.16344 0 0 7.16344 0 16V184C0 192.837 7.16344 200 16 200H204C212.837 200 220 192.837 220 184V16C220 7.16344 212.837 0 204 0Z"
+              fill="#0A0A0A"
+            />
+            <path
+              d="M37.3989 68.7192L73.4851 100L37.3989 131.281"
+              stroke="#00C2FF"
+              strokeWidth="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M91.4587 48.5175L110.765 151.482L136.506 93.5646L162.247 151.482L181.553 48.5175"
+              stroke="#00C2FF"
+              strokeWidth="12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_309_52">
+              <rect width="220" height="200" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
         <span>Wallyx.</span>
       </div>
       {children}
