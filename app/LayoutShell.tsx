@@ -1,77 +1,77 @@
 /** biome-ignore-all lint/a11y/noSvgWithoutTitle: Title no needed on logos */
-"use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 
 export default function LayoutShell({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	const btnRef = useRef<HTMLButtonElement>(null);
-	const pathname = usePathname();
+  const btnRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
 
-	useEffect(() => {
-		const toggleBtn = btnRef.current;
-		if (!toggleBtn) return;
+  useEffect(() => {
+    const toggleBtn = btnRef.current;
+    if (!toggleBtn) return;
 
-		const prefersDark = window.matchMedia(
-			"(prefers-color-scheme: dark)",
-		).matches;
-		const saved =
-			typeof window !== "undefined" ? localStorage.getItem("theme") : null;
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+    const saved =
+      typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
 
-		function updateBtnText() {
-			if (toggleBtn) {
-				toggleBtn.textContent = document.body.classList.contains("dark")
-					? "light mode."
-					: "dark mode.";
-			}
-		}
+    function updateBtnText() {
+      if (toggleBtn) {
+        toggleBtn.textContent = document.body.classList.contains('dark')
+          ? 'light mode.'
+          : 'dark mode.';
+      }
+    }
 
-		if (saved === "dark" || (!saved && prefersDark)) {
-			document.body.classList.add("dark");
-		}
-		updateBtnText();
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.body.classList.add('dark');
+    }
+    updateBtnText();
 
-		function handleClick() {
-			document.body.classList.toggle("dark");
-			if (document.body.classList.contains("dark")) {
-				localStorage.setItem("theme", "dark");
-			} else {
-				localStorage.setItem("theme", "light");
-			}
-			updateBtnText();
-		}
+    function handleClick() {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+      updateBtnText();
+    }
 
-		toggleBtn.addEventListener("click", handleClick);
+    toggleBtn.addEventListener('click', handleClick);
 
-		return () => {
-			toggleBtn.removeEventListener("click", handleClick);
-		};
-	}, []);
+    return () => {
+      toggleBtn.removeEventListener('click', handleClick);
+    };
+  }, []);
 
-	return (
-		<>
-			<nav className="side-menu">
-				<Link href="/" className={pathname === "/" ? "active" : ""}>
-					home
-				</Link>
-				{/* <Link href="#cases">cases</Link> */}
-				{/* <Link href="#projects">projects</Link> */}
-				<Link href="/about" className={pathname === "/about" ? "active" : ""}>
-					about me
-				</Link>
-				<Link
-					href="/socials"
-					className={pathname === "/socials" ? "active" : ""}
-				>
-					socials
-				</Link>
-			</nav>
-			<div className="logo">
-				<svg
+  return (
+    <>
+      <nav className="side-menu">
+        <Link href="/" className={pathname === '/' ? 'active' : ''}>
+          home
+        </Link>
+        {/* <Link href="#cases">cases</Link> */}
+        {/* <Link href="#projects">projects</Link> */}
+        <Link href="/about" className={pathname === '/about' ? 'active' : ''}>
+          about me
+        </Link>
+        <Link
+          href="/socials"
+          className={pathname === '/socials' ? 'active' : ''}
+        >
+          socials
+        </Link>
+      </nav>
+      <div className="logo">
+        {/* <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="220"
 					height="200"
@@ -103,19 +103,19 @@ export default function LayoutShell({
 							<rect width="220" height="200" fill="white" />
 						</clipPath>
 					</defs>
-				</svg>
-				<span>Wallyx.</span>
-			</div>
-			{children}
-			<button
-				className="darkmode-btn"
-				aria-label="Toggle dark mode"
-				id="darkmode-toggle"
-				ref={btnRef}
-				type="button"
-			>
-				dark mode.
-			</button>
-		</>
-	);
+				</svg> */}
+        <span>Wallyx.</span>
+      </div>
+      {children}
+      <button
+        className="darkmode-btn"
+        aria-label="Toggle dark mode"
+        id="darkmode-toggle"
+        ref={btnRef}
+        type="button"
+      >
+        dark mode.
+      </button>
+    </>
+  );
 }
