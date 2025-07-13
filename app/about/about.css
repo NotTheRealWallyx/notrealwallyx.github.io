@@ -1,7 +1,7 @@
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5.5rem 1rem 4rem 1rem;
+  padding: 5.5rem 1rem 4rem;
   background: var(--bg);
   color: var(--fg);
 }
@@ -62,7 +62,7 @@
 .about-name {
   font-size: 2rem;
   font-weight: 500;
-  margin: 0 0 0.7rem 0;
+  margin: 0 0 0.7rem;
   color: var(--fg);
 }
 
@@ -174,7 +174,7 @@ body:not(.dark) {
     max-width: 100%;
   }
   .about-container {
-    padding: 1.2rem 0.5rem 2rem 0.5rem;
+    padding: 1.2rem 0.5rem 2rem;
   }
   .about-desc {
     padding-left: 1.2rem;

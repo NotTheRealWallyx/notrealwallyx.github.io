@@ -24,7 +24,7 @@ body {
 
 .contact-underline {
 	display: block;
-	margin: 0.5rem auto 0 auto;
+	margin: 0.5rem auto 0;
 	width: 70px;
 	height: 4px;
 	background: var(--accent);
@@ -36,7 +36,7 @@ body {
 	gap: 2.5rem;
 	justify-content: center;
 	align-items: center;
-	margin: 2.5rem 0 2.5rem 0;
+	margin: 2.5rem 0;
 	flex-wrap: wrap;
 }
 
