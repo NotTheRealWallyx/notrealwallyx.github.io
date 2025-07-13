@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "biome lint .",
     "format": "biome check --write .",
-    "ci": "biome ci",
-    "deploy": "gh-pages -d out"
+    "ci": "biome ci"
   },
   "dependencies": {
     "next": "15.3.4",
