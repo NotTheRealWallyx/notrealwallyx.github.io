@@ -4,7 +4,7 @@ export type Theme = "light" | "dark";
 
 export const socials = (theme: Theme) => [
 	{
-		href: "https://www.linkedin.com/",
+		href: "https://www.linkedin.com/in/mikel-sanchezmart/",
 		label: "LinkedIn",
 		icon: (
 			<Image
@@ -22,7 +22,7 @@ export const socials = (theme: Theme) => [
 		),
 	},
 	{
-		href: "https://github.com/",
+		href: "https://github.com/NotTheRealWallyx",
 		label: "GitHub",
 		icon: (
 			<Image
@@ -40,7 +40,7 @@ export const socials = (theme: Theme) => [
 		),
 	},
 	{
-		href: "https://codestats.net/",
+		href: "https://codestats.net/users/Wallyx",
 		label: "CodeStats",
 		icon: (
 			<Image
