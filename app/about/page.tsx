@@ -38,7 +38,7 @@ export default function About() {
 						>
 							GITHUB
 						</a>
-						<a href="mailto:mikelsmartinez@aol.com">EMAIL</a>
+						<a href="mailto:wallyx@wallyx.dev">EMAIL</a>
 					</div>
 				</div>
 			</section>
