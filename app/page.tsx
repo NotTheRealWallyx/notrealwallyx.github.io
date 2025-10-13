@@ -1,5 +1,5 @@
 "use client";
-import "./page.css";
+import "@page.css";
 
 export default function Home() {
 	return (
