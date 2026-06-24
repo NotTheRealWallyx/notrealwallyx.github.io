@@ -15,20 +15,25 @@ export default function About() {
 			</section>
 			<section className="about-main">
 				<div className="about-profile">
-					<Image
-						src="/ProfilePic.png"
-						alt="Profile"
-						className="about-profile-img"
-						width={200}
-						height={200}
-						priority
-					/>
+					<div className="about-profile-ring">
+						<Image
+							src="/ProfilePic.png"
+							alt="Profile"
+							className="about-profile-img"
+							width={200}
+							height={200}
+							priority
+						/>
+					</div>
 				</div>
 				<div className="about-info">
 					<h2 className="about-name">Mikel Sanchez</h2>
+					<p className="about-tagline">co-founder · engineer · builder</p>
 					<p className="about-desc">
-						I'm a friendly coder who loves to experiment, learn, and share
-						knowledge. I'm always looking for new challenges and ways to grow.
+						Software engineer based in the UK with a decade of experience
+						building products end-to-end. I enjoy experimenting with new
+						technologies, leading engineering teams, and shipping things that
+						matter.
 					</p>
 					<div className="about-links">
 						<a
@@ -44,27 +49,27 @@ export default function About() {
 			</section>
 			<section className="about-skills-row">
 				<AboutSkillCard
-					icon="🚀"
+					icon="01"
 					title="Fast Learner"
 					desc="I pick up new technologies and concepts quickly, always staying up-to-date with the latest trends in software and tech."
 				/>
 				<AboutSkillCard
-					icon="🧩"
+					icon="02"
 					title="Problem Solver"
 					desc="I love breaking down complex problems and finding creative, efficient solutions that make a real impact."
 				/>
 				<AboutSkillCard
-					icon="🛠️"
+					icon="03"
 					title="Versatile Developer"
 					desc="From backend APIs to frontend design, I enjoy working across the stack and adapting to project needs."
 				/>
 				<AboutSkillCard
-					icon="✍️"
+					icon="04"
 					title="Clear Documenter"
 					desc="I write concise, helpful documentation and comments to make life easier for my future self and teammates."
 				/>
 				<AboutSkillCard
-					icon="🧪"
+					icon="05"
 					title="Experimenter"
 					desc="I love trying out new ideas, tools, and approaches—always exploring ways to make things better or more interesting."
 				/>

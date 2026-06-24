@@ -1,50 +1,50 @@
 .about-skill-card {
 	background: var(--bg);
-	border: 1px solid #e5e5e5;
-	border-radius: 12px;
+	border: 1px solid rgba(128, 128, 128, 0.2);
+	border-left: 3px solid var(--accent);
+	border-radius: 8px;
 	padding: 1.2rem 1.5rem;
 	min-width: 210px;
 	max-width: 260px;
 	display: flex;
-	align-items: flex-start;
-	gap: 1rem;
-	box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.03);
+	flex-direction: column;
+	gap: 0.4rem;
 	flex: 1 1 210px;
+	transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.about-skill-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.07);
 }
 
 .about-skill-icon {
-	font-size: 2rem;
-	margin-top: 0.1rem;
+	font-family: "JetBrains Mono", var(--font-geist-mono), monospace;
+	font-size: 0.8rem;
+	color: var(--accent);
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	opacity: 0.9;
 }
 
 .about-skill-title {
 	font-weight: 600;
-	font-size: 1.1rem;
+	font-size: 1.05rem;
 	color: var(--fg);
+	margin-top: 0.1rem;
 }
 
 .about-skill-desc {
-	font-size: 0.97rem;
+	font-size: 0.92rem;
 	color: #888;
-	margin-top: 0.2rem;
+	line-height: 1.55;
+	margin-top: 0.1rem;
 }
 
 .about-job-location {
-	display: inline-block;
-	font-size: 0.98rem;
+	display: block;
+	font-size: 0.88rem;
 	color: #888;
-	font-weight: 500;
-	margin-left: 0.5em;
-	margin-bottom: 0.2em;
-	vertical-align: middle;
-}
-
-.about-skill-card:hover .about-skill-icon,
-.contact-social:hover img,
-.contact-social:hover svg {
-	transform: scale(1.15);
-	filter: brightness(1.2);
-	transition:
-		transform 0.2s,
-		filter 0.2s;
+	font-weight: 400;
+	margin-top: 0.1em;
 }
