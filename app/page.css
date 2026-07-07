@@ -10,6 +10,8 @@
 	--headline-font: "Silkscreen", sans-serif;
 	--headline-size: clamp(2rem, 6vw, 3rem);
 	--transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	--mobile-logo-height: 44px;
+	--mobile-nav-height: 56px;
 }
 
 html,
@@ -86,11 +88,11 @@ body {
 	.side-menu {
 		flex-direction: row;
 		width: 100vw;
-		height: 56px;
+		height: var(--mobile-nav-height);
 		border: none;
 		position: fixed;
 		left: 0;
-		top: 0;
+		top: var(--mobile-logo-height);
 		justify-content: center;
 		align-items: center;
 		gap: 1.5rem;
@@ -235,6 +237,25 @@ body {
 	}
 	.darkmode-btn {
 		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.logo {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: var(--mobile-logo-height);
+		font-size: 1rem;
+		padding-left: 1rem;
+		background: var(--bg);
+		box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.03);
+	}
+
+	.logo svg {
+		width: 1.5rem;
+		height: 1.5rem;
 	}
 }
 

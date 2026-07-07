@@ -1,0 +1,78 @@
+.project-card {
+	background: var(--bg);
+	border: 1px solid rgba(128, 128, 128, 0.2);
+	border-left: 3px solid var(--accent);
+	border-radius: 8px;
+	padding: 1.4rem 1.6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	flex: 1 1 300px;
+	min-width: 260px;
+	max-width: 420px;
+	transition:
+		transform 0.15s,
+		box-shadow 0.15s;
+}
+
+.project-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.07);
+}
+
+.project-card-title {
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: var(--fg);
+}
+
+.project-card-desc {
+	font-size: 0.92rem;
+	color: #888;
+	line-height: 1.55;
+	margin: 0;
+}
+
+.project-card-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.project-card-tag {
+	font-family: "JetBrains Mono", var(--font-geist-mono), monospace;
+	font-size: 0.72rem;
+	letter-spacing: 0.04em;
+	color: var(--accent);
+	opacity: 0.9;
+	border: 1px solid rgba(128, 128, 128, 0.25);
+	border-radius: 4px;
+	padding: 0.15rem 0.5rem;
+}
+
+.project-card-links {
+	display: flex;
+	gap: 0.75rem;
+	margin-top: auto;
+	padding-top: 0.3rem;
+}
+
+.project-card-link {
+	color: var(--fg);
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 0.82rem;
+	letter-spacing: 0.08em;
+	border: 1px solid rgba(128, 128, 128, 0.35);
+	border-radius: 4px;
+	padding: 0.35rem 0.85rem;
+	font-family: "JetBrains Mono", var(--font-geist-mono), monospace;
+	transition:
+		border-color 0.15s,
+		color 0.15s;
+}
+
+.project-card-link:hover {
+	color: var(--accent);
+	border-color: var(--accent);
+}

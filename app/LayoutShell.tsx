@@ -59,7 +59,12 @@ export default function LayoutShell({
 					home
 				</Link>
 				{/* <Link href="#cases">cases</Link> */}
-				{/* <Link href="#projects">projects</Link> */}
+				<Link
+					href="/projects"
+					className={pathname === "/projects" ? "active" : ""}
+				>
+					projects
+				</Link>
 				<Link href="/about" className={pathname === "/about" ? "active" : ""}>
 					about me
 				</Link>
