@@ -57,6 +57,24 @@ export const socials = (theme: Theme) => [
 			/>
 		),
 	},
+	{
+		href: "https://codeberg.org/Wallyx",
+		label: "Codeberg",
+		icon: (
+			<Image
+				src={
+					theme === "dark"
+						? "/social_logos/codeberg-white.svg"
+						: "/social_logos/codeberg.svg"
+				}
+				alt="Codeberg"
+				width={40}
+				height={40}
+				style={{ display: "block" }}
+				priority
+			/>
+		),
+	},
 ];
 
 export function ContactSocials({ theme }: { theme: Theme }) {
