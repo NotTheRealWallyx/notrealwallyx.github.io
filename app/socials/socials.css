@@ -10,6 +10,11 @@ body {
 	color: var(--fg);
 }
 
+.contact-header {
+	text-align: left;
+	margin-bottom: 2.5rem;
+}
+
 .contact-title {
 	font-family: "Geist", "Inter", Arial, sans-serif;
 	font-size: 2.5rem;
@@ -22,9 +27,9 @@ body {
 
 .contact-underline {
 	display: block;
-	margin: 0.5rem 0 0;
-	width: 70px;
-	height: 4px;
+	margin-top: 0.3rem;
+	width: 80px;
+	height: 5px;
 	background: var(--accent);
 	border-radius: 2px;
 }
