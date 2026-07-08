@@ -29,10 +29,12 @@ export default function Socials() {
 
 	return (
 		<div className="contact-container">
-			<h2 className="contact-title">
-				socials
-				<span className="contact-underline" />
-			</h2>
+			<section className="contact-header">
+				<h1 className="contact-title">
+					socials
+					<span className="contact-underline" />
+				</h1>
+			</section>
 			<ContactSocials theme={theme} />
 		</div>
 	);
